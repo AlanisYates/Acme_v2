@@ -63,6 +63,8 @@ header {
   right: 2.5rem;
   cursor: pointer;
   z-index: 1500;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
 }
 
 .menu-toggle .btn-line {
@@ -70,9 +72,31 @@ header {
   height: 0.3rem;
   margin: 0 0 0.5rem 0;
   background: white;
+  -webkit-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
+}
+
+.menu-toggle.close {
+  -webkit-transform: translateY(-50%) rotate(180deg);
+          transform: translateY(-50%) rotate(180deg);
+}
+
+.menu-toggle.close .btn-line:nth-child(1) {
+  -webkit-transform: rotate(45deg) translate(5px, 5px);
+          transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.close .btn-line:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.close .btn-line:nth-child(3) {
+  -webkit-transform: rotate(-45deg) translate(7px, -6px);
+          transform: rotate(-45deg) translate(7px, -6px);
 }
 
 .nav-list {
+  display: none;
   list-style: none;
   position: fixed;
   top: 0;
@@ -81,4 +105,8 @@ header {
   height: 100vh;
   background-color: #1b2031;
 }
+
+@-webkit-keyframes rotateX {}
+
+@keyframes rotateX {}
 /*# sourceMappingURL=style.css.map */

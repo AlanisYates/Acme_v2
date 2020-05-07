@@ -63,18 +63,39 @@ header {
   right: 2.5rem;
   cursor: pointer;
   z-index: 1500;
+  transition: all 0.7s;
 
   .btn-line {
     width: 2.8rem;
     height: 0.3rem;
     margin: 0 0 0.5rem 0;
     background: $background;
+    transition: all 0.7s ease-out;
   }
 
-  
+  // Rotate into X with menu close
+  &.close {
+    transform: translateY(-50%) rotate(180deg);
+
+    .btn-line {
+      // Line 1 - Rotate
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      // Line 2 - Hide
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      // Line 3 - Rotate
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+      }
+    }
+  }
 }
 
 .nav-list {
+  display: none;
   list-style: none;
   position: fixed;
   top: 0;
@@ -82,4 +103,8 @@ header {
   width: 80%;
   height: 100vh;
   background-color: $dark_font;
+}
+
+// Key Frames
+@keyframes rotateX {
 }
