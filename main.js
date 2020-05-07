@@ -4,8 +4,10 @@ const selectElement = function (element) {
 };
 
 const menuToggler = selectElement(".menu-toggle");
-const body = selectElement("body");
+const navList = selectElement(".nav-list");
+const nav = selectElement("nav");
 
 menuToggler.addEventListener("click", function () {
   menuToggler.classList.toggle("close");
+  navList.classList.toggle("open");
 });

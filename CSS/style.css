@@ -53,23 +53,7 @@ header {
           justify-content: center;
 }
 
-.nav ::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 1000;
-  opacity: 0;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: opacity 0.5s;
-  transition: opacity 0.5s;
-}
-
-.menu-toggle {
+.nav .menu-toggle {
   color: #fff;
   font-size: 2.2rem;
   position: absolute;
@@ -83,35 +67,35 @@ header {
   transition: all 0.7s;
 }
 
-.menu-toggle .btn-line {
+.nav .menu-toggle .btn-line {
   width: 2.8rem;
   height: 0.3rem;
   margin: 0 0 0.5rem 0;
   background: white;
-  -webkit-transition: all 0.7s ease-out;
-  transition: all 0.7s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
-.menu-toggle.close {
+.nav .menu-toggle.close {
   -webkit-transform: translateY(-50%) rotate(180deg);
           transform: translateY(-50%) rotate(180deg);
 }
 
-.menu-toggle.close .btn-line:nth-child(1) {
+.nav .menu-toggle.close .btn-line:nth-child(1) {
   -webkit-transform: rotate(45deg) translate(0.5rem, 0.5rem);
           transform: rotate(45deg) translate(0.5rem, 0.5rem);
 }
 
-.menu-toggle.close .btn-line:nth-child(2) {
+.nav .menu-toggle.close .btn-line:nth-child(2) {
   opacity: 0;
 }
 
-.menu-toggle.close .btn-line:nth-child(3) {
+.nav .menu-toggle.close .btn-line:nth-child(3) {
   -webkit-transform: rotate(-45deg) translate(0.7rem, -0.6rem);
           transform: rotate(-45deg) translate(0.7rem, -0.6rem);
 }
 
-.nav-list {
+.nav .nav-list {
   list-style: none;
   position: fixed;
   top: 0;
@@ -130,9 +114,31 @@ header {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   z-index: 1250;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
-@-webkit-keyframes rotateX {}
+.nav .nav-list.open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
 
-@keyframes rotateX {}
+.nav .nav-list .nav-link {
+  display: block;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  margin-right: -2px;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.nav .nav-list .nav-item {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
 /*# sourceMappingURL=style.css.map */
