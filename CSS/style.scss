@@ -69,14 +69,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  ::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-  }
 
   .logo {
     color: $dark_font;
