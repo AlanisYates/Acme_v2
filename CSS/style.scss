@@ -182,27 +182,23 @@ header {
   height: 100vh;
   display: flex;
   align-items: center;
-}
+  text-align: center;
 
-.main-content {
-  align-items: center;
-  justify-content: center;
-  width: 45rem;
+  .main-content {
+    text-align: center;
 
-  .heading {
-    font-size: 6.5rem;
-    font-weight: 700;
-    color: $dark_font;
-    margin-bottom: 1rem;
+    .heading {
+      display: inline-block;
+      text-align: left;
+      font-size: 4.7rem;
+      font-weight: 700;
+
+      .sub {
+        font-size: 1.5rem;
+        font-weight: 400;
+      }
+    }
   }
-
-  .sub-heading {
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: $dark_font;
-    margin-bottom: 1rem;
-  }
-
   .call-actions {
     display: flex;
     justify-content: flex-start;
@@ -210,47 +206,46 @@ header {
 
     .android-btn,
     .apple-btn {
-      padding: 1.5rem;
-      border-radius: 0.7rem;
-      width: 15rem;
+      padding: 15px;
+      border-radius: 12px;
+      width: 160px;
       display: flex;
       justify-content: center;
       align-items: center;
       text-decoration: none;
       color: white;
-      font-size: 1.4rem;
+      font-size: 1rem;
     }
 
     .android-btn {
-      color: $dark_font;
-      margin-right: 1rem;
+      background: #3edc76;
+      color: white;
+      margin-right: 20px;
       font-weight: 700;
-      border: 2px solid $background;
-      transition: background 0.3s;
-
-      &:hover {
-        background: $dark_font;
-        color: $background;
-      }
     }
 
     .apple-btn {
       background: transparent;
-      border: 2px solid $background;
+      border: 2px solid #2e9f79;
       font-weight: 700;
-      color: $dark_font;
-      transition: background 0.3s;
+      color: #2e9f79;
+    }
+  }
+}
+// Info sction
+.info-section {
+  min-height: 100vh;
+  width: 100%;
+  background: $light_green;
 
-      &:hover {
-        background: $dark_font;
-        color: $background;
-      }
+  .container {
+    img {
+      display: none;
     }
   }
 }
 
-// Info sction
-.info-section {
-  min-height: 60vh;
+.perks {
+  min-height: 100vh;
   background: $dark_font;
 }

@@ -212,33 +212,26 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
-.main-content {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 45rem;
+.hero .main-content {
+  text-align: center;
 }
 
-.main-content .heading {
-  font-size: 6.5rem;
+.hero .main-content .heading {
+  display: inline-block;
+  text-align: left;
+  font-size: 4.7rem;
   font-weight: 700;
-  color: #1b2031;
-  margin-bottom: 1rem;
 }
 
-.main-content .sub-heading {
+.hero .main-content .heading .sub {
   font-size: 1.5rem;
-  font-weight: 500;
-  color: #1b2031;
-  margin-bottom: 1rem;
+  font-weight: 400;
 }
 
-.main-content .call-actions {
+.hero .call-actions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -250,11 +243,11 @@ header {
           align-items: center;
 }
 
-.main-content .call-actions .android-btn,
-.main-content .call-actions .apple-btn {
-  padding: 1.5rem;
-  border-radius: 0.7rem;
-  width: 15rem;
+.hero .call-actions .android-btn,
+.hero .call-actions .apple-btn {
+  padding: 15px;
+  border-radius: 12px;
+  width: 160px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -266,39 +259,35 @@ header {
           align-items: center;
   text-decoration: none;
   color: white;
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
-.main-content .call-actions .android-btn {
-  color: #1b2031;
-  margin-right: 1rem;
-  font-weight: 700;
-  border: 2px solid white;
-  -webkit-transition: background 0.3s;
-  transition: background 0.3s;
-}
-
-.main-content .call-actions .android-btn:hover {
-  background: #1b2031;
+.hero .call-actions .android-btn {
+  background: #3edc76;
   color: white;
+  margin-right: 20px;
+  font-weight: 700;
 }
 
-.main-content .call-actions .apple-btn {
+.hero .call-actions .apple-btn {
   background: transparent;
-  border: 2px solid white;
+  border: 2px solid #2e9f79;
   font-weight: 700;
-  color: #1b2031;
-  -webkit-transition: background 0.3s;
-  transition: background 0.3s;
-}
-
-.main-content .call-actions .apple-btn:hover {
-  background: #1b2031;
-  color: white;
+  color: #2e9f79;
 }
 
 .info-section {
-  min-height: 60vh;
+  min-height: 100vh;
+  width: 100%;
+  background: #3edc76;
+}
+
+.info-section .container img {
+  display: none;
+}
+
+.perks {
+  min-height: 100vh;
   background: #1b2031;
 }
 /*# sourceMappingURL=style.css.map */
