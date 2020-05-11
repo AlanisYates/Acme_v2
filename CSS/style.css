@@ -276,19 +276,4 @@ header {
   font-weight: 700;
   color: #2e9f79;
 }
-
-.info-section {
-  min-height: 100vh;
-  width: 100%;
-  background: #3edc76;
-}
-
-.info-section .container img {
-  display: none;
-}
-
-.perks {
-  min-height: 100vh;
-  background: #1b2031;
-}
 /*# sourceMappingURL=style.css.map */
