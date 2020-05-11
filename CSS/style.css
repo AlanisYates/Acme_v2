@@ -276,4 +276,12 @@ header {
   font-weight: 700;
   color: #2e9f79;
 }
+
+.phone-img {
+  background-image: url(https://keeping.nl/images/site/ios-screengrabs/ios-dagoverzicht-uren-links.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
 /*# sourceMappingURL=style.css.map */

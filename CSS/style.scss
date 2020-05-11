@@ -185,7 +185,7 @@ header {
   text-align: center;
 
   .main-content {
-    text-align: center; 
+    text-align: center;
 
     .heading {
       display: inline-block;
@@ -197,7 +197,6 @@ header {
         font-size: 1.5rem;
         font-weight: 400;
       }
-
     }
 
     .call-actions {
@@ -236,5 +235,11 @@ header {
   }
 }
 
-
-
+// Phone image section
+.phone-img {
+  background-image: url(https://keeping.nl/images/site/ios-screengrabs/ios-dagoverzicht-uren-links.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
