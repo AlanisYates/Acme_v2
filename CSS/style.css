@@ -226,25 +226,26 @@ header {
   font-weight: 700;
 }
 
-.hero .main-content .heading .sub {
+.hero .main-content .heading p {
   font-size: 1.5rem;
   font-weight: 400;
 }
 
-.hero .call-actions {
+.hero .main-content .call-actions {
+  margin-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.hero .call-actions .android-btn,
-.hero .call-actions .apple-btn {
+.hero .main-content .call-actions .android-btn,
+.hero .main-content .call-actions .apple-btn {
   padding: 15px;
   border-radius: 12px;
   width: 160px;
@@ -262,14 +263,14 @@ header {
   font-size: 1rem;
 }
 
-.hero .call-actions .android-btn {
+.hero .main-content .call-actions .android-btn {
   background: #3edc76;
   color: white;
   margin-right: 20px;
   font-weight: 700;
 }
 
-.hero .call-actions .apple-btn {
+.hero .main-content .call-actions .apple-btn {
   background: transparent;
   border: 2px solid #2e9f79;
   font-weight: 700;

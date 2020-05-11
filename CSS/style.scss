@@ -185,7 +185,7 @@ header {
   text-align: center;
 
   .main-content {
-    text-align: center;
+    text-align: center; 
 
     .heading {
       display: inline-block;
@@ -193,42 +193,45 @@ header {
       font-size: 4.7rem;
       font-weight: 700;
 
-      .sub {
+      p {
         font-size: 1.5rem;
         font-weight: 400;
       }
-    }
-  }
-  .call-actions {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
 
-    .android-btn,
-    .apple-btn {
-      padding: 15px;
-      border-radius: 12px;
-      width: 160px;
+    }
+
+    .call-actions {
+      margin-top: 2rem;
       display: flex;
       justify-content: center;
       align-items: center;
-      text-decoration: none;
-      color: white;
-      font-size: 1rem;
-    }
 
-    .android-btn {
-      background: #3edc76;
-      color: white;
-      margin-right: 20px;
-      font-weight: 700;
-    }
+      .android-btn,
+      .apple-btn {
+        padding: 15px;
+        border-radius: 12px;
+        width: 160px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+      }
 
-    .apple-btn {
-      background: transparent;
-      border: 2px solid #2e9f79;
-      font-weight: 700;
-      color: #2e9f79;
+      .android-btn {
+        background: #3edc76;
+        color: white;
+        margin-right: 20px;
+        font-weight: 700;
+      }
+
+      .apple-btn {
+        background: transparent;
+        border: 2px solid #2e9f79;
+        font-weight: 700;
+        color: #2e9f79;
+      }
     }
   }
 }
