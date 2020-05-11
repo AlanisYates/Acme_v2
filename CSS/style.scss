@@ -23,7 +23,7 @@ html {
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 a {
@@ -42,6 +42,18 @@ section {
   padding: 0 2.4rem;
 }
 
+.shape2 {
+  width: 100rem;
+  height: 100rem;
+  clip-path: circle(50% at 50% 50%);
+  background: #2e9f79;
+  top: 0;
+  right: 0;
+  position: fixed;
+  transform: translate(25%, -20%);
+  z-index: -1;
+}
+
 // Header
 header {
   width: 100%;
@@ -56,7 +68,15 @@ header {
   height: 7.2rem;
   display: flex;
   align-items: center;
-  // justify-content: center;
+  justify-content: center;
+  ::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
 
   .logo {
     color: $dark_font;
@@ -71,8 +91,6 @@ header {
     color: #fff;
     font-size: 2.2rem;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     right: 2.5rem;
     cursor: pointer;
     z-index: 1500;
@@ -89,7 +107,7 @@ header {
     // Rotate into X with menu close
     &.close {
       transform: translateY(-50%) rotate(180deg);
-      
+      position: fixed;
 
       .btn-line {
         background: $background;
@@ -215,7 +233,7 @@ header {
       color: $dark_font;
       margin-right: 1rem;
       font-weight: 700;
-      border: 2px solid $light_green;
+      border: 2px solid $background;
       transition: background 0.3s;
 
       &:hover {
@@ -226,7 +244,7 @@ header {
 
     .apple-btn {
       background: transparent;
-      border: 2px solid $light_green;
+      border: 2px solid $background;
       font-weight: 700;
       color: $dark_font;
       transition: background 0.3s;
@@ -237,4 +255,10 @@ header {
       }
     }
   }
+}
+
+// Info sction
+.info-section {
+  min-height: 60vh;
+  background: $dark_font;
 }
