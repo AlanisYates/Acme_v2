@@ -149,6 +149,11 @@ header {
       justify-content: center;
       align-items: center;
       color: $background;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $dark_font;
+      }
     }
   }
 }

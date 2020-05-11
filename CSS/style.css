@@ -171,5 +171,11 @@ header {
       -ms-flex-align: center;
           align-items: center;
   color: white;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.nav .nav-list .menu-btn:hover {
+  color: #1b2031;
 }
 /*# sourceMappingURL=style.css.map */
