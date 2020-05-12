@@ -109,7 +109,7 @@ header {
 }
 
 .nav .menu-toggle.close .btn-line {
-  background: white;
+  background: whitesmoke;
 }
 
 .nav .menu-toggle.close .btn-line:nth-child(1) {
@@ -179,7 +179,7 @@ header {
   color: #3edc76;
 }
 
-.nav .nav-list .menu-btn {
+.menu-btn {
   background: #3edc76;
   padding: 10px 30px;
   font-size: 2rem;
@@ -195,13 +195,17 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: white;
+  color: whitesmoke;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }
 
-.nav .nav-list .menu-btn:hover {
+.menu-btn:hover {
   color: #1b2031;
+}
+
+.menu-btn .bottom-pos {
+  width: 5rem;
 }
 
 .hero {
@@ -282,42 +286,84 @@ header {
   background-image: url(https://keeping.nl/images/site/ios-screengrabs/ios-dagoverzicht-uren-links.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  height: 60vh;
-}
-
-.perks {
+  background-attachment: relative;
+  background-position-x: -9rem;
+  background-position-y: 12rem;
   height: 100vh;
-  background: #3edc76;
 }
 
-.perks .container {
-  height: 100%;
-}
-
-.perks .container .perk-list {
-  height: 100%;
+.phone-img .heading {
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #1b2031;
+  border-radius: 0.7rem;
+  font-size: 2.5rem;
+  color: whitesmoke;
+}
+
+.perks {
+  background: #1b2031;
+  color: whitesmoke;
+}
+
+.perks img {
+  width: 100%;
+}
+
+.perks .image-group {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+}
+
+footer {
+  padding: 7.9rem 0;
+  background-color: #1b2031;
+  color: whitesmoke;
+  text-align: center;
+  position: relative;
+}
+
+footer .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .bottom .download-btn {
+  background: #3edc76;
+  padding: 10px 30px;
+  width: 25rem;
+  font-size: 2rem;
+  border-radius: 12px;
+  font-weight: 600;
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: whitesmoke;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
-footer {
-  padding: 7.9rem 0;
-  background-color: #1b2031;
-  color: white;
-  text-align: center;
-  position: relative;
+footer .bottom .download-btn:hover {
+  color: #1b2031;
 }
 
 footer .back-to-top {
@@ -382,7 +428,7 @@ footer .social-icons i {
 
 footer .social-icons i .social-icons i:hover,
 footer .social-icons i .social-icons i:focus {
-  color: white;
+  color: whitesmoke;
 }
 
 footer .newsletter-form {
