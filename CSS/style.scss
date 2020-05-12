@@ -267,18 +267,17 @@ header {
 .perks {
   background: $dark_font;
   color: whitesmoke;
-  height: 100vh;
 
   .container {
     .image-group {
-      background-color: red;
-      height: 73vh;
+      overflow: hidden;
       img {
         width: 100%;
       }
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 1.5rem;
+      margin-bottom: 6rem;
     }
   }
 
@@ -286,7 +285,6 @@ header {
   .slideshow-container {
     position: relative;
     background: #f1f1f1f1;
-    height: 24vh;
 
     /* Slides */
     .mySlides {
