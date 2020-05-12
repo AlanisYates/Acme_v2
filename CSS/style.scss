@@ -245,21 +245,31 @@ header {
 // Phone image section
 .phone-img {
   // background-color: $dark_font;
-  background-image: url(https://keeping.nl/images/site/ios-screengrabs/ios-dagoverzicht-uren-links.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: relative;
-  background-position-x: -9rem;
-  background-position-y: 12rem;
-  height: 100vh;
-  .heading {
-    left: 0;
-    display: flex;
+  // background-image: url();
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-attachment: relative;
+  // background-position-x: -9rem;
+  // background-position-y: 12rem;
+  .container {
     justify-content: center;
-    background-color: $dark_font;
-    border-radius: 0.7rem;
-    font-size: 2.5rem;
-    color: $background;
+    .img-container {
+      img {
+        transform: translate(-20rem, 9rem) scale(.9);
+        z-index: -1;
+        overflow: hidden;
+      }
+    }
+    .heading {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      background-color: $dark_font;
+      border-radius: 0.7rem;
+      font-size: 2.5rem;
+      top: 4rem;
+      color: $background;
+    }
   }
 }
 

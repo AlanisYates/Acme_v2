@@ -282,18 +282,21 @@ header {
   color: #2e9f79;
 }
 
-.phone-img {
-  background-image: url(https://keeping.nl/images/site/ios-screengrabs/ios-dagoverzicht-uren-links.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: relative;
-  background-position-x: -9rem;
-  background-position-y: 12rem;
-  height: 100vh;
+.phone-img .container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.phone-img .heading {
-  left: 0;
+.phone-img .container .img-container img {
+  -webkit-transform: translate(-20rem, 9rem) scale(0.9);
+          transform: translate(-20rem, 9rem) scale(0.9);
+  z-index: -1;
+  overflow: hidden;
+}
+
+.phone-img .container .heading {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -303,6 +306,7 @@ header {
   background-color: #1b2031;
   border-radius: 0.7rem;
   font-size: 2.5rem;
+  top: 4rem;
   color: whitesmoke;
 }
 
