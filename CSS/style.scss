@@ -255,7 +255,7 @@ header {
     justify-content: center;
     .img-container {
       img {
-        transform: translate(-20rem, 9rem) scale(.9);
+        transform: translate(-20rem, 9rem) scale(0.9);
         z-index: -1;
         overflow: hidden;
       }
@@ -267,7 +267,7 @@ header {
       top: 4rem;
       h1 {
         font-size: 3rem;
-        padding: .5rem 0rem;
+        padding: 0.5rem 0rem;
         color: $background;
         display: flex;
         justify-content: center;
@@ -449,18 +449,19 @@ footer {
     margin-bottom: 5.4rem;
     display: flex;
     justify-content: center;
-  }
 
-  .social-icons i {
-    color: white;
-    font-size: 2rem;
-    padding: 0.8rem 2rem;
-    opacity: 0.5;
-    transition: color 0.3s;
+    i {
+      color: white;
+      font-size: 3rem;
+      padding: 0.8rem 2rem;
+      opacity: 0.5;
+      transition: color opacity 0.3s;
 
-    .social-icons i:hover,
-    .social-icons i:focus {
-      color: $background;
+      &:hover,
+      &:focus {
+        color: $light_green;
+        opacity: 1;
+      }
     }
   }
 

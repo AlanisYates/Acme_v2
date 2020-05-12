@@ -304,7 +304,7 @@ header {
 
 .phone-img .container .heading h1 {
   font-size: 3rem;
-  padding: .5rem 0rem;
+  padding: 0.5rem 0rem;
   color: whitesmoke;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -518,16 +518,16 @@ footer .social-icons {
 
 footer .social-icons i {
   color: white;
-  font-size: 2rem;
+  font-size: 3rem;
   padding: 0.8rem 2rem;
   opacity: 0.5;
-  -webkit-transition: color 0.3s;
-  transition: color 0.3s;
+  -webkit-transition: color opacity 0.3s;
+  transition: color opacity 0.3s;
 }
 
-footer .social-icons i .social-icons i:hover,
-footer .social-icons i .social-icons i:focus {
-  color: whitesmoke;
+footer .social-icons i:hover, footer .social-icons i:focus {
+  color: #3edc76;
+  opacity: 1;
 }
 
 footer .newsletter-form {
