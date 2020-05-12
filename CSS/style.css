@@ -297,17 +297,24 @@ header {
 
 .phone-img .container .heading {
   position: relative;
+  background-color: #1b2031;
+  border-radius: 0.7rem;
+  top: 4rem;
+}
+
+.phone-img .container .heading h1 {
+  font-size: 3rem;
+  padding: .5rem 0rem;
+  color: whitesmoke;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #1b2031;
-  border-radius: 0.7rem;
-  font-size: 2.5rem;
-  top: 4rem;
-  color: whitesmoke;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .perks {

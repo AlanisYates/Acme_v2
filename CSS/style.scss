@@ -262,13 +262,17 @@ header {
     }
     .heading {
       position: relative;
-      display: flex;
-      justify-content: center;
       background-color: $dark_font;
       border-radius: 0.7rem;
-      font-size: 2.5rem;
       top: 4rem;
-      color: $background;
+      h1 {
+        font-size: 3rem;
+        padding: .5rem 0rem;
+        color: $background;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
   }
 }
