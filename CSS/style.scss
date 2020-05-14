@@ -175,12 +175,6 @@ header {
   &:hover {
     color: $dark_font;
   }
-
-  .bottom-pos {
-    width: 5rem;
-    // position: absolute;
-    // top: 0;
-  }
 }
 
 // Hero
@@ -192,8 +186,6 @@ header {
   text-align: center;
 
   .main-content {
-    text-align: center;
-
     .heading {
       display: inline-block;
       text-align: left;
@@ -508,7 +500,7 @@ footer {
 
 // Media Queries
 // ---------------------------------------------------------------------------------------
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1200px) {
   section {
     padding: 7.9rem;
   }
@@ -519,17 +511,51 @@ footer {
 
   .nav {
     justify-content: space-between;
+
+    .nav-list {
+      position: initial;
+      width: initial;
+      height: initial;
+      background-color: transparent;
+      padding: 0;
+      transform: initial;
+      transition: initial;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+
+      .menu-btn {
+        margin-top: 0;
+      }
+
+      .nav-item {
+        margin: 0 2.4rem;
+        border: none;
+
+        a {
+          color: $dark_font;
+          text-transform: none;
+        }
+      }
+    }
   }
 
-  .nav-list {
-    position: initial;
-    width: initial;
-    height: initial;
-    background-color: transparent;
-    padding: 0;
-    justify-content: initial;
-    flex-direction: row;
-    transform: initial;
-    transition: initial;
+  .hero {
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      justify-content: left;
+      .call-actions {
+        justify-content: left;
+        align-items: left;
+
+        .android-btn,
+        .apple-btn {
+          margin: 0;
+          margin-right: 1rem;
+        }
+      }
+    }
   }
 }

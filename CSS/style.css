@@ -204,10 +204,6 @@ header {
   color: #1b2031;
 }
 
-.menu-btn .bottom-pos {
-  width: 5rem;
-}
-
 .hero {
   width: 100%;
   height: 100vh;
@@ -217,10 +213,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
-}
-
-.hero .main-content {
   text-align: center;
 }
 
@@ -594,7 +586,7 @@ footer .newsletter-btn {
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1200px) {
   section {
     padding: 7.9rem;
   }
@@ -606,23 +598,65 @@ footer .newsletter-btn {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .nav-list {
+  .nav .nav-list {
     position: initial;
     width: initial;
     height: initial;
     background-color: transparent;
     padding: 0;
-    -webkit-box-pack: initial;
-        -ms-flex-pack: initial;
-            justify-content: initial;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     -webkit-transform: initial;
             transform: initial;
     -webkit-transition: initial;
     transition: initial;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .nav .nav-list .menu-btn {
+    margin-top: 0;
+  }
+  .nav .nav-list .nav-item {
+    margin: 0 2.4rem;
+    border: none;
+  }
+  .nav .nav-list .nav-item a {
+    color: #1b2031;
+    text-transform: none;
+  }
+  .hero .main-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  .hero .main-content .call-actions {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+  }
+  .hero .main-content .call-actions .android-btn,
+  .hero .main-content .call-actions .apple-btn {
+    margin: 0;
+    margin-right: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
