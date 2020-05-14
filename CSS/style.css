@@ -216,6 +216,10 @@ header {
   text-align: center;
 }
 
+.hero .image-hero {
+  display: none;
+}
+
 .hero .main-content .heading {
   display: inline-block;
   text-align: left;
@@ -255,8 +259,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px solid #1b2031;
   margin: 1rem;
+  border: 2px solid #1b2031;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -645,6 +649,12 @@ footer .newsletter-btn {
         -ms-flex-pack: left;
             justify-content: left;
   }
+  .hero .main-content .heading {
+    font-size: 8rem;
+  }
+  .hero .main-content .heading p {
+    font-size: 2.1rem;
+  }
   .hero .main-content .call-actions {
     -webkit-box-pack: left;
         -ms-flex-pack: left;
@@ -655,8 +665,21 @@ footer .newsletter-btn {
   }
   .hero .main-content .call-actions .android-btn,
   .hero .main-content .call-actions .apple-btn {
+    width: 20rem;
     margin: 0;
     margin-right: 1rem;
+  }
+  .hero .main-content .call-actions .android-btn i,
+  .hero .main-content .call-actions .apple-btn i {
+    font-size: 2.5rem;
+  }
+  .hero .image-hero {
+    display: initial;
+    position: absolute;
+    z-index: -1;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
