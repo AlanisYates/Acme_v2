@@ -590,7 +590,7 @@ footer .newsletter-btn {
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
   section {
     padding: 7.9rem;
   }
@@ -685,6 +685,71 @@ footer .newsletter-btn {
             justify-content: center;
     -webkit-transform: translate(-10rem, -40rem) scale(0.9);
             transform: translate(-10rem, -40rem) scale(0.9);
+  }
+  .phone-img {
+    display: none;
+  }
+  footer {
+    background-color: whitesmoke;
+    color: #1b2031;
+  }
+  footer .back-to-top {
+    background-color: whitesmoke;
+  }
+  footer .back-to-top i {
+    color: #1b2031;
+  }
+  footer .footer-content {
+    max-width: 77.5rem;
+    margin: auto;
+  }
+  footer .footer-content-about {
+    max-width: 81.3rem;
+    margin: 0 auto 5.4rem;
+  }
+  footer .footer-content-about h4 {
+    font-size: 3.5rem;
+  }
+  footer .footer-content-about p {
+    font-size: 1.8rem;
+  }
+  footer .footer-content-devider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .social-media,
+  footer .newsletter-form {
+    width: 100%;
+    max-width: 37.3rem;
+    margin: 0 1rem;
+  }
+  footer .social-icons i {
+    opacity: 1;
+    font-size: 3rem;
+    color: #1b2031;
+  }
+  footer .newsletter-form {
+    width: 100%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .newsletter-input {
+    width: 100%;
+    max-width: 25rem;
+    padding: 1rem;
+    border-radius: 0.4rem;
+  }
+  footer .newsletter-btn {
+    margin-left: 7.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
