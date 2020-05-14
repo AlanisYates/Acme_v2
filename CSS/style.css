@@ -232,7 +232,7 @@ header {
 }
 
 .hero .main-content .heading p {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 400;
 }
 
@@ -251,9 +251,9 @@ header {
 
 .hero .main-content .call-actions .android-btn,
 .hero .main-content .call-actions .apple-btn {
-  padding: 15px;
-  border-radius: 12px;
-  width: 160px;
+  padding: 1.5rem;
+  border-radius: 1.2rem;
+  width: 15rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,23 +263,27 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-decoration: none;
-  color: white;
-  font-size: 1rem;
+  border: 2px solid #1b2031;
+  margin: 1rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.hero .main-content .call-actions .android-btn {
+.hero .main-content .call-actions .android-btn:hover,
+.hero .main-content .call-actions .apple-btn:hover {
   background: #3edc76;
-  color: white;
-  margin-right: 20px;
-  font-weight: 700;
+  border: 2px solid #3edc76;
 }
 
-.hero .main-content .call-actions .apple-btn {
-  background: transparent;
-  border: 2px solid #2e9f79;
-  font-weight: 700;
-  color: #2e9f79;
+.hero .main-content .call-actions .android-btn:hover i,
+.hero .main-content .call-actions .apple-btn:hover i {
+  color: #1b2031;
+}
+
+.hero .main-content .call-actions .android-btn i,
+.hero .main-content .call-actions .apple-btn i {
+  color: #1b2031;
+  font-size: 1.2rem;
 }
 
 .phone-img .container {
