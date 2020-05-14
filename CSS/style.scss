@@ -235,7 +235,6 @@ header {
         i {
           color: $dark_font;
           font-size: 1.2rem;
-
         }
       }
     }
@@ -504,5 +503,33 @@ footer {
   100% {
     opacity: 0;
     transform: translateY(-1rem);
+  }
+}
+
+// Media Queries
+// ---------------------------------------------------------------------------------------
+@media screen and (min-width: 900px) {
+  section {
+    padding: 7.9rem;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .nav {
+    justify-content: space-between;
+  }
+
+  .nav-list {
+    position: initial;
+    width: initial;
+    height: initial;
+    background-color: transparent;
+    padding: 0;
+    justify-content: initial;
+    flex-direction: row;
+    transform: initial;
+    transition: initial;
   }
 }

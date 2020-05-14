@@ -593,4 +593,36 @@ footer .newsletter-btn {
             transform: translateY(-1rem);
   }
 }
+
+@media screen and (min-width: 900px) {
+  section {
+    padding: 7.9rem;
+  }
+  .menu-toggle {
+    display: none;
+  }
+  .nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .nav-list {
+    position: initial;
+    width: initial;
+    height: initial;
+    background-color: transparent;
+    padding: 0;
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-transform: initial;
+            transform: initial;
+    -webkit-transition: initial;
+    transition: initial;
+  }
+}
 /*# sourceMappingURL=style.css.map */
