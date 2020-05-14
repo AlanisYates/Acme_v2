@@ -634,6 +634,9 @@ footer .newsletter-btn {
     color: #1b2031;
     text-transform: none;
   }
+  .hero {
+    overflow: hidden;
+  }
   .hero .main-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -680,6 +683,8 @@ footer .newsletter-btn {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-transform: translate(-10rem, -40rem) scale(0.9);
+            transform: translate(-10rem, -40rem) scale(0.9);
   }
 }
 /*# sourceMappingURL=style.css.map */

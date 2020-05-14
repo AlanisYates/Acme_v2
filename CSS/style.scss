@@ -545,6 +545,7 @@ footer {
   }
 
   .hero {
+    overflow: hidden;
     .main-content {
       display: flex;
       flex-direction: column;
@@ -579,6 +580,7 @@ footer {
       position: absolute;
       z-index: -1;
       justify-content: center;
+      transform: translate(-10rem, -40rem) scale(0.9);
     }
   }
 }
